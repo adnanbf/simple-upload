@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>File Upload</title>
+    </head>
+    <body>
+        <form method="post" action="/upload" enctype="multipart/form-data">
+            <label>The file :</label>
+            <input type="file" name="data" required />
+
+            <input type="hidden" name="auth" value={{.Auth}}>
+
+            <button type="submmit">Submit</button>
+        </form>
+    </body>
+</html>
